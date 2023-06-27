@@ -1,0 +1,137 @@
+body {
+    font: 17px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #FEFAE0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container_2 {
+    max-width: 60%;
+    margin: auto;
+    border: #BC6C25 solid 3px;
+    background: #FEFAE0;
+}
+
+.main-img img,
+.imgs img {
+    width: 100%;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #606C38;
+    color: #FEFAE0;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #283618 3px solid;
+    font-size: 20px;
+}
+
+header a {
+    color: #FEFAE0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #DDA15E;
+    font-weight: bold;
+}
+
+.highlight {
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.headerIdeas {
+    text-align: center;
+    font-size: 24px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #DDA15E;
+    background-color: #606C38;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        font-size: 3vw ;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .headerIdeas {
+        font-size: 3vw ;
+    }
+
+}
+
+.cursor {
+    cursor: pointer;
+}
