@@ -161,6 +161,10 @@ footer {
     font-size: 3vw ;
   }
 
+    .container {
+    overflow: visible;
+  }
+
   #newsletter h1,
   #newsletter form,
   #boxes .box {
